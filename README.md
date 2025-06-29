@@ -21,7 +21,6 @@ The AI Legal Sentiment Analyzer is a Python-based tool designed to classify the 
 1. Clone the repository:
 2. - Use `--delimiter "\t"` if your CSV is tab-separated.
 
-## Project Structure
 AI_Legal_Sentiment_Analyzer/
 ├── src/                # Source code
 │   └── sentiment_analyzer.py  # Main script with interactive and batch modes
@@ -57,3 +56,8 @@ AI_Legal_Sentiment_Analyzer/
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Troubleshooting
+- **No Output File**: Ensure the `data/` folder exists and is writable. Run the terminal as administrator if needed.
+- **CUDA Errors**: If "out of memory" occurs, reduce `max_length` to 256 in the script or run on CPU by removing `.to("cuda:0")`.
+- **Installation Issues**: Verify Python version and internet connectivity for dependency installation
